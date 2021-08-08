@@ -1,4 +1,11 @@
-# c-
-Brincadeiras com C++ e alguns scripts para EPTH
-O repositório, até este momento possui:
--Jogo da forca feito com C++ e um jogo simples de adivinhação
+# c++
+Basic concepts of C ++
+<br>
+OpenGL Introduction Studies
+:triangular_ruler:
+<br>
+Some ethical hacking scripts
+<br>
+Be careful when running scripts in the epth folder, preferably run in a lab for pentest
+:shipit:
+
