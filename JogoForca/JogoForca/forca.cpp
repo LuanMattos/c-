@@ -3,7 +3,6 @@
 #include <map>
 #include <vector>
 #include <cstdlib>
-#include "letra_existe.hpp"
 #include "imprime_cabecalho.hpp"
 #include "le_arquivo.hpp"
 #include "sorteia_palavra.hpp"
@@ -15,9 +14,9 @@
 
 using namespace std;
 
-string palavra_secreta; 
-map<char, bool> chutou;
-vector<char> chutes_errados;
+static string palavra_secreta; 
+static map<char, bool> chutou;
+static vector<char> chutes_errados;
 
 int main () {
     imprime_cabecalho();
@@ -30,7 +29,7 @@ int main () {
         imprime_palavra(palavra_secreta, chutou);
 
         //Aqui apenas passamos o endereço de memória pois sabemos que serão modificadas (forma convencional)
-        chuta(&chutou, &chutes_errados);
+        chuta(&chutou, &chutes_errados, palavra_secreta);
     }
 
     cout << "Fim de jogo!" << endl;
